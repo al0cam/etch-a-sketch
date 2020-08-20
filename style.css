@@ -1,0 +1,80 @@
+body
+{
+    background-color: rgb(185, 126, 106);
+    display: grid;
+    grid-template-rows: auto;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px 
+}
+.logo
+{
+    grid-row: 1;
+    grid-column: 1/4;
+    justify-self: center;
+    align-items: center;
+}
+.buttonPart
+{
+    grid-row: 2;
+    grid-column: 1/4;
+    align-items: center;
+    justify-self: center;
+    height: 30px;
+    
+}
+.buttonPart input
+{
+    background-color: #6ab8b9;
+    border: #6ab8b9;;
+    width: 30px;
+    padding: 4px;
+    text-align: center;    
+}
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button
+{
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type=number]
+{
+  -moz-appearance: textfield;
+}
+
+.buttonPart button
+{
+    background-color: #6ab8b9;
+    border: #6ab8b9;;
+    padding: 5px;
+}
+.mainDiv
+{
+    background-color: white;
+    grid-row: 3;
+    grid-column: 1/4;
+    margin: auto;
+    display: grid;
+    /*grid-template-rows: repeat(2, 1fr);
+    grid-template-columns: repeat(2, 1fr);*/
+    gap: 1px;
+    width:  960px;
+    height: 700px;
+    border-style: solid;
+}
+.smollDiv
+{
+    /*grid-row: auto;
+    grid-column: auto;*/
+    border-style: solid;
+    border-color: rgb(117, 117, 117);
+    border-width: thin;
+    padding: 3px 0px;
+    width: auto;
+    height: auto;
+}
+.hoverFun
+{
+    background-color: black;
+}
