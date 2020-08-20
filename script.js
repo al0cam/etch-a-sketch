@@ -42,8 +42,19 @@ function resetGrid()
     allDiv.forEach(element => element.classList.remove('hoverFun'));
     
 }
+function addStyle()
+{
+    this.style.opacity = '50%';
+}
+function removeStyle()
+{
+    this.style.opacity = '100%';
+}
 
 reset.addEventListener('click', resetGrid);
 set.addEventListener('click', deleteGrid);
-
+reset.addEventListener('mouseover', addStyle);
+reset.addEventListener('mouseleave', removeStyle);
+set.addEventListener('mouseover', addStyle);
+set.addEventListener('mouseleave', removeStyle);
 makeGrid();
